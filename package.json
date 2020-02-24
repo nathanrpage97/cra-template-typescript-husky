@@ -4,7 +4,10 @@
   "description": "A Create React App template integrated with husky",
   "main": "template.json",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier --write '**/*.{ts,tsx,js,jsx,css,html,json,md,less,scss}'",
+    "prettier-check": "prettier --check '**/*.{ts,tsx,js,jsx,css,html,json,md,less,scss}'",
+    "eslint": "eslint --fix src",
+    "eslint-check": "eslint src"
   },
   "engines": {
     "node": ">=8.10"
@@ -37,7 +40,7 @@
       "eslint --fix",
       "prettier --write"
     ],
-    "**/*.{json,css,scss,md}": [
+    "**/*.{json,css,less,scss,md}": [
       "prettier --write"
     ]
   },
