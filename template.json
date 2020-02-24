@@ -1,0 +1,33 @@
+{
+  "package": {
+    "dependencies": {
+      "@testing-library/react": "^9.3.2",
+      "@testing-library/jest-dom": "^4.2.4",
+      "@testing-library/user-event": "^7.1.2",
+      "@types/node": "^12.0.0",
+      "@types/react": "^16.9.0",
+      "@types/react-dom": "^16.9.0",
+      "@types/jest": "^24.0.0",
+      "typescript": "~3.7.2",
+      "eslint": "^6.8.0",
+      "husky": "^4.2.3",
+      "lint-staged": "^10.0.7",
+      "prettier": "^1.19.1"
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "src/**/*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+      "**/*.{json,css,scss,md}": ["prettier --write"]
+    },
+    "prettier": {
+      "singleQuote": true,
+      "printWidth": 120,
+      "trailingComma": "es5",
+      "arrowParens": "always"
+    }
+  }
+}
