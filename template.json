@@ -14,6 +14,12 @@
       "lint-staged": "^10.0.7",
       "prettier": "^1.19.1"
     },
+    "scripts": {
+      "prettier": "prettier --write '**/*.{ts,tsx,js,jsx,css,html,json,md,less,scss}'",
+      "prettier-check": "prettier --check '**/*.{ts,tsx,js,jsx,css,html,json,md,less,scss}'",
+      "eslint": "eslint --fix src",
+      "eslint-check": "eslint src/**"
+    },
     "husky": {
       "hooks": {
         "pre-commit": "lint-staged"

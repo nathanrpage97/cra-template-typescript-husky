@@ -7,7 +7,7 @@
     "prettier": "prettier --write '**/*.{ts,tsx,js,jsx,css,html,json,md,less,scss}'",
     "prettier-check": "prettier --check '**/*.{ts,tsx,js,jsx,css,html,json,md,less,scss}'",
     "eslint": "eslint --fix src",
-    "eslint-check": "eslint src"
+    "eslint-check": "eslint src/**"
   },
   "engines": {
     "node": ">=8.10"
